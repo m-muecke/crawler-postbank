@@ -226,9 +226,9 @@ scrapeAllCities <- function() {
   return(df_bank)
 }
 
-scrapeCitiesPlz <- function() {
+scrapeCitiesPlz <- function(zipcodes = "zipcodes_germany.csv") {
   ### scrapes all postbank locations by using postal codes and manipulating url
-  df_plz <- read.csv("/Users/mmuecke/Downloads/zuordnung_plz_ort.csv", colClasses = c("character", "character", "character"))
+  df_plz <- read.csv(zipcodes, colClasses = c("character", "character", "character"))
   plz_codes <- df_plz$plz
   plz_codes <- unique(plz_codes)
   links <- c()
