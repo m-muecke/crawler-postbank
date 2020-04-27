@@ -1,2 +1,3 @@
-# Crawler Banks
-Web scraper to webscrape all bank branches for the postbank. Further banks will be added soon.
+# Crawler Postbank
+
+Web crawls all Postbank branches.
